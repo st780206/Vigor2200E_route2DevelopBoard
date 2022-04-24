@@ -15,6 +15,7 @@ vigor 2200x route change Development board
 ---------------------------
 
 1. 引出串口
+ > 电路改造已经完成。测试有效。（115200 8 1）
 
 2. 引出jtag
 
