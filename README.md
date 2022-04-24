@@ -24,5 +24,6 @@ vigor 2200x route change Development board
 -------
 1. u-boot 替换
    > u-boot 2013.01 之后没有s3c4510相关内容了，所以暂定使用u-boot-2012.04
+   > u-boot 2011.06 的boards.cfg 中有evb4510
 
 2. rtems 移植
