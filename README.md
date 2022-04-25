@@ -8,7 +8,7 @@ vigor 2200x route change Development board
 
  cpu S3c4510B
  
- ram 4M sdram       k4s161622d  2M*2
+ ram 4M sdram       k4s161622d  512K x 16Bit x 2 Banks Synchronous DRAM
  
  rom nor flash 1024k*8bit or 512k*16bit  E28F800
 
