@@ -10,7 +10,7 @@ vigor 2200x route change Development board
  
  ram 4M sdram       k4s161622d
  
- rom nor flash 512  E28F800
+ rom nor flash 1024k*8bit or 512k*16bit  E28F800
 
 ---------------------------
 
