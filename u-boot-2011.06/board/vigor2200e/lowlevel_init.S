@@ -98,7 +98,7 @@ lowlevel_init:
 	ldr r0, =0xe1a0f00e  /* mov pc, lr	   */
 	str r0, [r1]
 
-	adr   r0, memory_map_data
+	adr   r0, memory_map_data   /* 就是将memory_map_data对应指令当前的地址 存到 r0  */
 	ldmia r0, {r1-r12}
 	ldr   r0, =REG_EXTDBWTH
 
@@ -162,15 +162,16 @@ reset_cpu:
  * the system manager, starting with register REG_EXTDBWTH.
  ***********************************************************************/
 memory_map_data:
-	.long 0x00f03005     /* memory widths */
-	.long 0x12040060     /* Bank0 2MB FLASH	  @ 0x01000000 */
-	.long 0x22080060     /* Bank1 512KB FLASH @ 0x02000000 */
-	.long 0x00000000
-	.long 0x00000000
-	.long 0x00000000
-	.long 0x00000000
-	.long 0x08000380     /* DRAM0 8MB SRAM	  @ 0x00000000 */
-	.long 0x00000000
-	.long 0x00000000
-	.long 0x00000000
-	.long 0x9c218360     /* enable memory */
+/*  .long 0x00f03005  */   /* memory widths      REG_EXTDBWTH     */
+	.long 0x00003002     /* memory widths      REG_EXTDBWTH     */
+	.long 0x12040060     /* Bank0 2MB FLASH	  @ 0x01000000     ROMCON0      */
+	.long 0x22080060     /* Bank1 512KB FLASH @ 0x02000000     ROMCON1       */
+	.long 0x00000000     /*  ROMCON2   */
+	.long 0x00000000     /*  ROMCON3   */
+	.long 0x00000000     /*  ROMCON4   */
+	.long 0x00000000     /*  ROMCON5   */
+	.long 0x08000380     /* DRAM0 8MB SRAM	  @ 0x00000000    DRAMCON0     */
+	.long 0x00000000     /*  DRAMCON1   */
+	.long 0x00000000     /*  DRAMCON2   */
+	.long 0x00000000     /*  DRAMCON3   */
+	.long 0x9c218360     /* enable memory     REFEXTCON    */
