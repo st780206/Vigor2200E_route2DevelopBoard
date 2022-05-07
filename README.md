@@ -29,6 +29,8 @@ would be 3003014H.
 
 2. 引出jtag
 
+https://blog.csdn.net/oXiaoXue123456789/article/details/79259847
+
 https://www.elecfans.com/emb/arm/20110819210962_a.html
 
 ![image](https://user-images.githubusercontent.com/11971682/167244877-de86d0e7-4202-451e-932a-ba8aa8b93972.png)
