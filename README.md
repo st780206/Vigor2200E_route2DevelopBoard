@@ -35,6 +35,13 @@ https://www.elecfans.com/emb/arm/20110819210962_a.html
 
 ![image](https://user-images.githubusercontent.com/11971682/167244877-de86d0e7-4202-451e-932a-ba8aa8b93972.png)
 
+![59451bc341f2980526b77da9d79f947](https://user-images.githubusercontent.com/11971682/167332001-33372d53-f1b5-4a97-ab84-7770d392e457.png)
+
+![d808451c06157576bb847462e32a466](https://user-images.githubusercontent.com/11971682/167332015-cbe49234-e18f-41ab-94a9-39e51a654e23.png)
+
+![d9644ce737e24deb0cdea5c6f5cf6c4](https://user-images.githubusercontent.com/11971682/167332108-455dc19c-b03c-42c9-9f96-5b3a5d7bded0.jpg)
+
+根据以上电路，连接jtag后，使用jlink可以连接成功。
 
 3. 拆掉 rtl8019as 网卡芯片
 
